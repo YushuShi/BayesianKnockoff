@@ -1,0 +1,40 @@
+Package: BayesianKnockoff
+Title: Bayesian Knockoff Generator for Data with Complex Structure
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Yushu",
+           family = "Shi",
+           role = c("aut", "cre"),
+           email = "shiyushu2006@gmail.com")
+Description: Currently, the package uses rstan to generate knockoffs for data with one-hot categorical covariates, 
+            microbiome data with compositional contraint (with phylogenetic tree), and Dirichlet process for continuous
+            predictors from complex distributions.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Biarch: true
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    MCMCpack,
+    methods,
+    Rcpp (>= 0.12.0),
+    reticulate,
+    RcppParallel (>= 5.0.1),
+    rstan (>= 2.18.1),
+    rstantools (>= 2.1.1),
+    knockoff,
+    MASS,
+    survival,
+    grpreg,
+    fastDummies
+LinkingTo: 
+    BH (>= 1.66.0),
+    Rcpp (>= 0.12.0),
+    RcppEigen (>= 0.3.3.3.0),
+    RcppParallel (>= 5.0.1),
+    rstan (>= 2.18.1),
+    StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
